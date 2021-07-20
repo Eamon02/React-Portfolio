@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.btn--gradient {
+  color: #fff;
+  background-image: repeating-linear-gradient(90deg, #fdb8e9, #fff390 11%, #b3e3f5 22%, #cbecfa 31%, #f4cbdb 41%, #a5ccf9 57%, #ff9de6 74%, #f977c6 88%, #fdb8e9);
+  background-size: 200% 100%;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 0 10px 15px rgba(16, 29, 44, 0.205);
+          box-shadow: 0 10px 15px rgba(16, 29, 44, 0.205);
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(16, 29, 44, 0.205);
+          box-shadow: 0 0.5rem 1rem rgba(16, 29, 44, 0.205);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #54483a;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn--animated {
+  -webkit-animation: moveInUp 1s ease-out 0.5s, shine 6s linear infinite;
+          animation: moveInUp 1s ease-out 0.5s, shine 6s linear infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #c69963;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #c69963;
+  padding: 3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-text:hover {
+  background-color: #c69963;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.15);
+          box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.15);
+  -webkit-transform: translate(-2px);
+          transform: translate(-2px);
+}
+
+.btn-text:active {
+  -webkit-box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.15);
+          box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.15);
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+}
+
+.NavbarItem {
+  background: -webkit-gradient(linear, left top, right top, from(#04004d), color-stop(59%, #592ce0), to(#7c23e3));
+  background: linear-gradient(90deg, #04004d 0%, #592ce0 59%, #7c23e3 100%);
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+
+.NavbarItem__logo {
+  color: #fff;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.NavbarItem .fa-react {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.NavbarItem .nav-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 2rem;
+}
+
+.section-about {
+  background-color: #f9f7f6;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+/*# sourceMappingURL=main.css.map */
